@@ -1,0 +1,23 @@
+{
+    "services": {
+        "authentication": {
+            "url": "http://localhost:4001",
+            "kubernetiesDNS": "<service_dns>",
+            "endpoints": []
+        },
+        "endorsement": {
+            "url": "http://localhost:4004",
+            "kubernetiesDNS": "<service_dns>",
+            "endpoints": [
+                "/api/companies/:id?"
+            ]
+        },
+        "rbac": {
+            "url": "http://localhost:4001",
+            "kubernetiesDNS": "<service_dns>",
+            "endpoints": [
+                "/api/companies/:id?"
+            ]
+        }
+    }
+}
